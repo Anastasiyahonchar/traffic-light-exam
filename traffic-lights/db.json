@@ -1,0 +1,25 @@
+{
+  "lights": [
+    {
+      "id": "1",
+      "color": "red",
+      "description": "Red",
+      "clickcount": 0,
+      "isActive": false
+    },
+    {
+      "id": "2",
+      "color": "yellow",
+      "description": "Yellow",
+      "clickcount": 0,
+      "isActive": false
+    },
+    {
+      "id": "3",
+      "color": "green",
+      "description": "Green",
+      "clickcount": 0,
+      "isActive": true
+    }
+  ]
+}

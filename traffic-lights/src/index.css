@@ -1,0 +1,239 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #000000;
+  background-color: #f5f5dc;;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 0;
+  border: 2px solid #000;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.countdown-text {
+  position: absolute;
+}
+
+.light.red {
+  background-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+.light.yellow {
+  background-color: yellow;
+  box-shadow: 0 0 10px yellow;
+}
+
+.light.green {
+  background-color: green;
+  box-shadow: 0 0 10px green;
+}
+
+.traffic-page-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.traffic-lights-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.traffic-lights-container.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.traffic-lights-container.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 80px;
+  width: 200px;
+}
+
+.pedestrian-section .traffic-lights-container.horizontal { 
+  width: 130px; 
+  height: 80px; 
+  margin: 0 auto;
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: #d4af37; 
+  font-weight: bold;
+}
+
+.green-text {
+  color: green;
+  font-weight: bold;
+}
+
+.traffic-lights-wrapper {
+  display: flex;
+  flex-direction: row; 
+  gap: 4rem;
+  justify-content: center;
+  align-items: flex-start; 
+  margin-top: 2rem;
+}
+
+.traffic-light-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traffic-light-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pedestrian-button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pedestrian-button:hover {
+  background-color: #1b5e20;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header nav {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  height: 100%; 
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #3b699e;
+}
+
+.home-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.home-container h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+.home-container h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.task-list {
+  text-align: left;
+  margin-left: 20px;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  list-style-position: inside;
+}
+
+.task-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.task-list strong {
+  color: #424c8c;
+}
